@@ -10,9 +10,9 @@ int main()
     std::cout << "Here I will demonstrate an exectution of Newtons method of finding the zero point" << std::endl;
     std::cout << "in the function x^5 + 2x - 4." << std::endl << std::endl;
 
-    for (int i = 1; i <= 15; i++) {
+    for (int i = 1; i <= 5; i++) {
         n = n - (f(n) / fd(n));
-        std::cout << " " << i << ": " << n << std::endl;
+        std::cout << " x_" << i << ": " << n << std::endl;
     }
     return 0;
 }
