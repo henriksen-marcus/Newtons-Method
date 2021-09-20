@@ -1,9 +1,9 @@
 #include <iostream>
 
-double f(int x);
-double fd(int x);
+double f(double x);
+double fd(double x);
 
-double n = 1;
+double n = 1.0;
 
 int main()
 {
@@ -18,11 +18,11 @@ int main()
 }
 
 // f(x)
-double f(int x) {
-    return pow(x, 5) + 2.0 * x - 4;
+double f(double x) {
+    return x*x*x*x*x + 2.0 * x - 4;
 }
 
 // f'(x)
-double fd(int x) {
-    return 5 * pow(x, 4) + 2;
+double fd(double x) {
+    return 5.0 * x*x*x*x + 2;
 }
